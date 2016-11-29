@@ -1,0 +1,8 @@
+# -*- coding:utf-8 -*-
+
+import requests
+
+cook ={"Cookie":"SINAGLOBAL=2098964916703.13.1473043114429; un=13551001462; YF-Ugrow-G0=ad83bc19c1269e709f753b172bddb094; wvr=6; YF-V5-G0=020421dd535a1c903e89d913fb8a2988; _s_tentry=login.sina.com.cn; Apache=1907932315078.7153.1475070399268; ULV=1475070399381:38:38:5:1907932315078.7153.1475070399268:1475029757447; YF-Page-G0=0acee381afd48776ab7a56bd67c2e7ac; UOR=news.ifeng.com,widget.weibo.com,news.ifeng.com; login_sid_t=96c46fdd51c9453b66f85fca85b1ad60; SCF=AtBi8idbJRSzBfSDwasRpaPJVK_y0vhtMKiOKRRfpBAcHX53_pyacKYX4xlaTqT3K9cvTu-Ng_qBOp-Uy9pYhq4.; SUB=_2A25675MCDeTxGeNH7VsY9S_LwzuIHXVZnIPKrDV8PUNbmtBeLVTmkW845cX95lonPq5Dsz5nhy8vvezo9w..; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W5C0UR5WgCCFFD.FUJ7vePX5JpX5K2hUgL.Fo-4So.4SK2N1hM2dJLoIEBLxK-LBoMLB-zLxK-LBo2LB-qLxKML1-zLBonLxK-LBoMLB-zt; SUHB=0G0u0rCF34uzWJ; ALF=1506612946; SSOLoginState=1475076946"}
+url = "http://weibo.cn/u/1890493665"
+html = requests.get(url).content
+print html
